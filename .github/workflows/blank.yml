@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: 
+    branches:
       - master
       - release/*
   pull_request:
@@ -12,16 +12,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Setup Node.js for use with actions
       uses: actions/setup-node@v1.1.0
       with:
         node-version: '10.16'
-    
-    - name: lint
-      run: yarn lint
+
     - name: yarn
       run: yarn
-      
-      
+
+    - name: lint
+      run: yarn lint
+
