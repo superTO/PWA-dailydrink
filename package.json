@@ -7,8 +7,9 @@
     "start": "ng serve --open",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "lint": "npm run lint",
+    "e2e": "ng e2e",
+    "deploy": "gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +23,7 @@
     "@angular/pwa": "^0.803.17",
     "@angular/router": "~8.2.0",
     "@angular/service-worker": "~8.2.0",
+    "gh-pages": "^2.1.1",
     "http-server": "^0.11.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
