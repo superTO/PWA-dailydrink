@@ -19,12 +19,10 @@ jobs:
       with:
         node-version: '10.16'
 
-    - name: yarn
-      run: yarn
+    - name: npm instatll
+      run:  yarn
+            yarn lint
 
     - name: clean cache
       run: yarn cache clean
-
-    - name: lint
-      run: npm run lint
 
