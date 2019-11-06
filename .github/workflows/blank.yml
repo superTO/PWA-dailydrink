@@ -26,5 +26,5 @@ jobs:
       run: yarn cache clean
 
     - name: lint
-      run: yarn lint
+      run: ng lint
 
