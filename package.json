@@ -1,7 +1,9 @@
 {
   "name": "dailydrinks",
   "version": "0.0.0",
-  "homepage": "http://superTO.github.io/PWA-dailydrink",
+  "repository": "git@github.com:superTO/PWA-dailydrink.git",
+  "author": "Adokun <to840116@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
