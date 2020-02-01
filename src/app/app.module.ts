@@ -7,9 +7,12 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { DrinkComponent } from './drink/drink.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatTableModule } from '@angular/material/table';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
+import { MatFormFieldModule, MatInputModule, MatCardModule, MatButtonModule,
+  MatChipsModule, MatCheckboxModule, MatIconModule, MatProgressBarModule,
+  MatExpansionModule, MatAutocompleteModule, MatSlideToggleModule, MatTabsModule,
+  MatRadioModule, MatListModule, MatButtonToggleModule } from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,23 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    MatTableModule,
+    // Material
+    MatCardModule,
+    MatButtonModule,
+    MatInputModule,
+    MatChipsModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatProgressBarModule,
+    MatExpansionModule,
+    MatAutocompleteModule,
+    MatSlideToggleModule,
+    MatTabsModule,
+    MatRadioModule,
+    MatListModule,
+    MatButtonToggleModule,
+
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     NoopAnimationsModule
   ],
