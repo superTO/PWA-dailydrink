@@ -23,7 +23,8 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     MatTableModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
